@@ -110,6 +110,7 @@
             this.R_DI_TextBox = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.R_UFP_TextBox = new System.Windows.Forms.TextBox();
+            this.AVC_Value = new System.Windows.Forms.TextBox();
             this.Function_Points_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Next_FP_Panel)).BeginInit();
             this.DI_Options_Panel.SuspendLayout();
@@ -1120,6 +1121,7 @@
             // 
             // Result_Panel
             // 
+            this.Result_Panel.Controls.Add(this.AVC_Value);
             this.Result_Panel.Controls.Add(this.Again);
             this.Result_Panel.Controls.Add(this.label28);
             this.Result_Panel.Controls.Add(this.R_LOC_TextBox);
@@ -1202,22 +1204,22 @@
             this.R_Programming_Lang_ComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(47)))), ((int)(((byte)(64)))));
             this.R_Programming_Lang_ComboBox.FormattingEnabled = true;
             this.R_Programming_Lang_ComboBox.Items.AddRange(new object[] {
-            "Assembly Language\t                        320",
-            "C\t\t\t        128",
-            "COBOL/Fortran\t\t        105",
-            "Pascal\t\t\t         90",
-            "Ada\t\t\t         70",
-            "C++\t\t\t         64",
-            "Visual Basic\t                         32",
-            "Object-Oriented Languages\t         30",
-            "Smalltalk\t\t\t         22",
-            "Code Generators (PowerBuilder)        15",
-            "SQL/Oracle\t\t         12",
-            "Spreadsheets\t\t          6\t",
-            "Graphical Languages (Icons)\t          4"});
-            this.R_Programming_Lang_ComboBox.Location = new System.Drawing.Point(181, 357);
+            "Assembly Language\t                      ",
+            "C\t\t\t        ",
+            "COBOL/Fortran\t\t        \t",
+            "Pascal\t\t\t         ",
+            "Ada\t\t\t         \t",
+            "C++\t\t\t         ",
+            "Visual Basic\t                         \t",
+            "Object-Oriented Languages\t         \t",
+            "Smalltalk\t\t\t         \t",
+            "Code Generators (PowerBuilder)\t",
+            "SQL/Oracle\t\t         \t",
+            "Spreadsheets\t\t          \t \t",
+            "Graphical Languages (Icons)"});
+            this.R_Programming_Lang_ComboBox.Location = new System.Drawing.Point(123, 358);
             this.R_Programming_Lang_ComboBox.Name = "R_Programming_Lang_ComboBox";
-            this.R_Programming_Lang_ComboBox.Size = new System.Drawing.Size(339, 28);
+            this.R_Programming_Lang_ComboBox.Size = new System.Drawing.Size(284, 28);
             this.R_Programming_Lang_ComboBox.TabIndex = 32;
             this.R_Programming_Lang_ComboBox.SelectedIndexChanged += new System.EventHandler(this.R_Programming_Lang_ComboBox_SelectedIndexChanged);
             // 
@@ -1328,6 +1330,20 @@
             this.R_UFP_TextBox.TabIndex = 24;
             this.R_UFP_TextBox.Text = "0";
             this.R_UFP_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // AVC_Value
+            // 
+            this.AVC_Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(110)))), ((int)(((byte)(124)))));
+            this.AVC_Value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AVC_Value.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVC_Value.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AVC_Value.Location = new System.Drawing.Point(448, 353);
+            this.AVC_Value.Name = "AVC_Value";
+            this.AVC_Value.ReadOnly = true;
+            this.AVC_Value.Size = new System.Drawing.Size(121, 36);
+            this.AVC_Value.TabIndex = 38;
+            this.AVC_Value.Text = "0";
+            this.AVC_Value.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FunctionPointForm
             // 
@@ -1447,5 +1463,6 @@
         private System.Windows.Forms.ColumnHeader Weight;
         private System.Windows.Forms.ColumnHeader Count;
         private System.Windows.Forms.PictureBox Again;
+        private System.Windows.Forms.TextBox AVC_Value;
     }
 }

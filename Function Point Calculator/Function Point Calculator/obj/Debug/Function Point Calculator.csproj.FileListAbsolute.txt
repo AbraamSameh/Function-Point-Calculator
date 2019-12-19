@@ -16,3 +16,12 @@ H:\Materials\semester 7\Software Metrics\Project\Function Point Calculator\Funct
 H:\Materials\semester 7\Software Metrics\Project\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.csproj.GenerateResource.cache
 H:\Materials\semester 7\Software Metrics\Project\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.exe
 H:\Materials\semester 7\Software Metrics\Project\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.pdb
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\bin\Debug\Function Point Calculator.exe.config
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\bin\Debug\Function Point Calculator.exe
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\bin\Debug\Function Point Calculator.pdb
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.csprojAssemblyReference.cache
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function_Point_Calculator.GUI.FunctionPointForm.resources
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function_Point_Calculator.Properties.Resources.resources
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.csproj.GenerateResource.cache
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.exe
+C:\Users\Abraam\Desktop\Function-Point-Calculator\Function Point Calculator\Function Point Calculator\obj\Debug\Function Point Calculator.pdb

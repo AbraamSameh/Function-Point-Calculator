@@ -356,54 +356,67 @@ namespace Function_Point_Calculator.GUI
             switch(R_Programming_Lang_ComboBox.SelectedIndex)
             {
                 case 0:
+                    AVC_Value.Text = "320";
                     R_LOC_TextBox.Text=FPC.Calculate_LOC_Value(320).ToString();
                     break;
 
                 case 1:
+                    AVC_Value.Text = "128";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(128).ToString();
                     break;
 
                 case 2:
+                    AVC_Value.Text = "105";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(105).ToString();
                     break;
 
                 case 3:
+                    AVC_Value.Text = "90";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(90).ToString();
                     break;
 
                 case 4:
+                    AVC_Value.Text = "70";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(70).ToString();
                     break;
 
                 case 5:
+                    AVC_Value.Text = "64";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(64).ToString();
                     break;
 
                 case 6:
+                    AVC_Value.Text = "32";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(32).ToString();
                     break;
 
                 case 7:
+                    AVC_Value.Text = "30";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(30).ToString();
                     break;
 
                 case 8:
+                    AVC_Value.Text = "22";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(22).ToString();
                     break;
 
                 case 9:
+                    AVC_Value.Text = "15";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(15).ToString();
                     break;
 
                 case 10:
+                    AVC_Value.Text = "12";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(12).ToString();
                     break;
 
                 case 11:
+                    AVC_Value.Text = "6";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(6).ToString();
                     break;
 
                 case 12:
+                    AVC_Value.Text = "4";
                     R_LOC_TextBox.Text = FPC.Calculate_LOC_Value(4).ToString();
                     break;
             }
