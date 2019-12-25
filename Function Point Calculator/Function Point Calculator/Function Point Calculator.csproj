@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Function_Point_Calculator_Class.cs" />
+    <Compile Include="Classes\Function_Point_Calculator_Class.cs" />
     <Compile Include="GUI\FunctionPointForm.cs">
       <SubType>Form</SubType>
     </Compile>

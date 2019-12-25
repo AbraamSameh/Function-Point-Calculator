@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FunctionPointForm));
             this.label1 = new System.Windows.Forms.Label();
             this.Start_Button = new System.Windows.Forms.Button();
             this.Function_Points_Panel = new System.Windows.Forms.Panel();
@@ -93,10 +94,11 @@
             this.DI_TextBox = new System.Windows.Forms.TextBox();
             this.TC_Factors_Panel = new System.Windows.Forms.Panel();
             this.Next_TC_Factors_Panel = new System.Windows.Forms.PictureBox();
-            this.Enter_TC_Factors_Button = new System.Windows.Forms.Button();
             this.Enter_DI_Button = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.Enter_TC_Factors_Button = new System.Windows.Forms.Button();
             this.Result_Panel = new System.Windows.Forms.Panel();
+            this.AVC_Value = new System.Windows.Forms.TextBox();
             this.Again = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.R_LOC_TextBox = new System.Windows.Forms.TextBox();
@@ -110,7 +112,6 @@
             this.R_DI_TextBox = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.R_UFP_TextBox = new System.Windows.Forms.TextBox();
-            this.AVC_Value = new System.Windows.Forms.TextBox();
             this.Function_Points_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Next_FP_Panel)).BeginInit();
             this.DI_Options_Panel.SuspendLayout();
@@ -247,7 +248,7 @@
             this.Next_FP_Panel.TabStop = false;
             this.Next_FP_Panel.Click += new System.EventHandler(this.Next_FP_Panel_Click);
             this.Next_FP_Panel.MouseLeave += new System.EventHandler(this.Next_PictBox_FP_Panel_MouseLeave);
-            this.Next_FP_Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Next_PictBox_FP_Panel_MouseMove_1);
+            this.Next_FP_Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Next_PictBox_FP_Panel_MouseMove);
             // 
             // UFP_TextBox
             // 
@@ -969,9 +970,9 @@
             // 
             this.DI_Options_Panel.Controls.Add(this.Enter_DI_Panel);
             this.DI_Options_Panel.Controls.Add(this.TC_Factors_Panel);
-            this.DI_Options_Panel.Controls.Add(this.Enter_TC_Factors_Button);
             this.DI_Options_Panel.Controls.Add(this.Enter_DI_Button);
             this.DI_Options_Panel.Controls.Add(this.label7);
+            this.DI_Options_Panel.Controls.Add(this.Enter_TC_Factors_Button);
             this.DI_Options_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DI_Options_Panel.Location = new System.Drawing.Point(0, 0);
             this.DI_Options_Panel.Name = "DI_Options_Panel";
@@ -1079,21 +1080,6 @@
             this.Next_TC_Factors_Panel.MouseLeave += new System.EventHandler(this.Next_TC_Factors_Panel_MouseLeave);
             this.Next_TC_Factors_Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Next_TC_Factors_Panel_MouseMove);
             // 
-            // Enter_TC_Factors_Button
-            // 
-            this.Enter_TC_Factors_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(193)))));
-            this.Enter_TC_Factors_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Enter_TC_Factors_Button.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enter_TC_Factors_Button.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Enter_TC_Factors_Button.Location = new System.Drawing.Point(115, 122);
-            this.Enter_TC_Factors_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Enter_TC_Factors_Button.Name = "Enter_TC_Factors_Button";
-            this.Enter_TC_Factors_Button.Size = new System.Drawing.Size(468, 40);
-            this.Enter_TC_Factors_Button.TabIndex = 15;
-            this.Enter_TC_Factors_Button.Text = "Enter Technical Complexity Factors";
-            this.Enter_TC_Factors_Button.UseVisualStyleBackColor = false;
-            this.Enter_TC_Factors_Button.Click += new System.EventHandler(this.Enter_TC_Factors_Button_Click);
-            // 
             // Enter_DI_Button
             // 
             this.Enter_DI_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(193)))));
@@ -1112,12 +1098,27 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(325, 208);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(324, 208);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 29);
+            this.label7.Size = new System.Drawing.Size(43, 33);
             this.label7.TabIndex = 25;
             this.label7.Text = "or";
+            // 
+            // Enter_TC_Factors_Button
+            // 
+            this.Enter_TC_Factors_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(193)))));
+            this.Enter_TC_Factors_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Enter_TC_Factors_Button.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enter_TC_Factors_Button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Enter_TC_Factors_Button.Location = new System.Drawing.Point(92, 122);
+            this.Enter_TC_Factors_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Enter_TC_Factors_Button.Name = "Enter_TC_Factors_Button";
+            this.Enter_TC_Factors_Button.Size = new System.Drawing.Size(525, 40);
+            this.Enter_TC_Factors_Button.TabIndex = 15;
+            this.Enter_TC_Factors_Button.Text = "Enter Technical Complexity Factors (TCF)";
+            this.Enter_TC_Factors_Button.UseVisualStyleBackColor = false;
+            this.Enter_TC_Factors_Button.Click += new System.EventHandler(this.Enter_TC_Factors_Button_Click);
             // 
             // Result_Panel
             // 
@@ -1141,6 +1142,20 @@
             this.Result_Panel.Size = new System.Drawing.Size(686, 508);
             this.Result_Panel.TabIndex = 26;
             this.Result_Panel.Visible = false;
+            // 
+            // AVC_Value
+            // 
+            this.AVC_Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(110)))), ((int)(((byte)(124)))));
+            this.AVC_Value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AVC_Value.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AVC_Value.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AVC_Value.Location = new System.Drawing.Point(448, 353);
+            this.AVC_Value.Name = "AVC_Value";
+            this.AVC_Value.ReadOnly = true;
+            this.AVC_Value.Size = new System.Drawing.Size(121, 36);
+            this.AVC_Value.TabIndex = 38;
+            this.AVC_Value.Text = "0";
+            this.AVC_Value.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Again
             // 
@@ -1331,32 +1346,21 @@
             this.R_UFP_TextBox.Text = "0";
             this.R_UFP_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // AVC_Value
-            // 
-            this.AVC_Value.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(110)))), ((int)(((byte)(124)))));
-            this.AVC_Value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AVC_Value.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVC_Value.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.AVC_Value.Location = new System.Drawing.Point(448, 353);
-            this.AVC_Value.Name = "AVC_Value";
-            this.AVC_Value.ReadOnly = true;
-            this.AVC_Value.Size = new System.Drawing.Size(121, 36);
-            this.AVC_Value.TabIndex = 38;
-            this.AVC_Value.Text = "0";
-            this.AVC_Value.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FunctionPointForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(47)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(686, 508);
             this.Controls.Add(this.Result_Panel);
             this.Controls.Add(this.DI_Options_Panel);
             this.Controls.Add(this.Function_Points_Panel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Start_Button);
+            this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(193)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FunctionPointForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Function Point Calculator";

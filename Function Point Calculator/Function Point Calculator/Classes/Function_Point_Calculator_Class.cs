@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Function_Point_Calculator
 {
+
+    // Function Point Parameter Class contains the weight of the given type and the count
     class Parameter
     {
        
@@ -18,21 +20,30 @@ namespace Function_Point_Calculator
             this.weight = weight;
         }
 
-        public double Get_Parameter_Value()
+        public double Get_Parameter_Value() 
         {
             return count * weight;
         }
     }
+
+
+    //Function_Point_Calculator_Class contains Variables and Calculation Function
     class Function_Point_Calculator_Class
     {
-
         public double UFP;
         public int DI;
         public double TCF;
         public double FP;
         public double LOC;
+        
         List<Parameter> FP_Parameters = new List<Parameter>();
         List<int> DI_Attributes = new List<int>();
+
+        public bool Check_FP_Parameters_Empty()
+        {
+            return (FP_Parameters.Count == 0);
+        }
+
         public void Add_FP_Parameter(double count,int weight)
         {
             FP_Parameters.Add(new Parameter(count, weight));
@@ -72,11 +83,6 @@ namespace Function_Point_Calculator
         {
             FP = UFP * TCF;
             return FP;
-        }
-
-        public bool Check_FP_Parameters_Empty()
-        {
-            return (FP_Parameters.Count == 0);
         }
 
         public Double Calculate_LOC_Value(int AVC)
