@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Function_Point_Calculator_Class.cs" />
+    <Compile Include="Classes\Parameter.cs" />
     <Compile Include="GUI\FunctionPointForm.cs">
       <SubType>Form</SubType>
     </Compile>

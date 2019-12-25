@@ -1249,7 +1249,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(89, 41);
             this.label26.TabIndex = 31;
-            this.label26.Text = "PF :";
+            this.label26.Text = "FP :";
             // 
             // R_FP_TextBox
             // 
